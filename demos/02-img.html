@@ -5,32 +5,59 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Images</title>
         <style>
+            /* The way we select an element in CSS matters */
+            /* #id > .class > element */
+
+            /* tag selector */
             img {
                 height: 200px;
                 /*width: 100px;*/
 
                 padding: 4px;
-                /*border: 1px dotted crimson;*/
 
                 /*border-width: 1px;
                 border-style: dotted;
                 border-color: crimson;*/
 
-                border-top-width: 1px;
+                /*border-top-width: 1px;
                 border-right-width: 5px;
                 border-bottom-width: 10px;
-                border-left-width: 20px;
+                border-left-width: 20px;*/
 
-                border-style: dotted;
-                border-color: crimson;
+                /* border-style: dotted;
+                border-color: crimson; */
+            }
+
+            .img-border {
+                border: 1px dotted crimson;
+            }
+
+            .img-shinchan {
+                height: 300px;
+            }
+
+            #img-koala {
+                outline: 2px solid lightpink;
+                border: 2px solid blue;
             }
         </style>
     </head>
     <body>
-        <img src="images/koala-bear.jpeg" alt="Koala Bear cartoon" />
+        <img
+            src="images/koala-bear.jpeg"
+            alt="Koala Bear cartoon"
+            class="img-border"
+            id="img-koala"
+        />
         <img
             src="https://m.media-amazon.com/images/I/41Mz6BM2ZHL.jpg"
             alt="Shinchan"
+            class="img-border img-shinchan"
+        />
+        <img
+            src="https://m.media-amazon.com/images/I/41Mz6BM2ZHL.jpg"
+            alt="Shinchan"
+            class="img-shinchan"
         />
     </body>
 </html>

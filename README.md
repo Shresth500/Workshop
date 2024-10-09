@@ -9,3 +9,6 @@ Oct - Dec 2024
 - Every Friday - Objective assessment
 - Mid-training - Hands-on assessment
 - End of training - Capstone project
+
+## Assignments
+- How to rotate an image by 90 degrees. How to make an image larger (2x).
