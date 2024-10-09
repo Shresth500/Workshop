@@ -12,3 +12,6 @@ Oct - Dec 2024
 
 ## Assignments
 - How to rotate an image by 90 degrees. How to make an image larger (2x).
+- Create classes like so and apply on some elements like images
+    - `scale-2x` - should double the size of the element
+    - `rotate-90` - should rotate the element (either clockwise or anti-clockwise)
