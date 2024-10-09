@@ -19,3 +19,4 @@ Oct - Dec 2024
 - What is SEO?
     - What best practices should we follow wrt images and links for SEO?
 - 5 other types for `<input type="______" />`
+- EXERCISE: checkbox and radio demo
