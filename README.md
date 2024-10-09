@@ -18,3 +18,4 @@ Oct - Dec 2024
 - What does target attribute of link do?
 - What is SEO?
     - What best practices should we follow wrt images and links for SEO?
+- 5 other types for `<input type="______" />`

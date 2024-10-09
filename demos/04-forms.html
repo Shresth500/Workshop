@@ -6,10 +6,31 @@
         <title>Forms</title>
     </head>
     <body>
-        <form method="post">
-            <input type="text" name="message" />
-            <input type="password" name="password" />
-            <input type="email" name="email" />
+        <form method="post" action="05-success.html">
+            <input type="text" name="message" value="Hello" />
+            <input
+                type="password"
+                name="password"
+                placeholder="Your password"
+                required
+            />
+            <input
+                type="email"
+                name="email"
+                placeholder="john.doe@ascendion.com"
+                pattern="[A-Za-z][A-Za-z0-9\._]*@ascendion.com"
+            />
+            <input type="number" value="0" min="0" max="10" />
+
+            <!--
+                5 other types for <input type="______" />
+                checkbox
+                radio
+                number
+                date
+                time
+                reset (button)
+            -->
 
             <button type="submit">Login</button>
         </form>
