@@ -15,3 +15,6 @@ Oct - Dec 2024
 - Create classes like so and apply on some elements like images
     - `scale-2x` - should double the size of the element
     - `rotate-90` - should rotate the element (either clockwise or anti-clockwise)
+- What does target attribute of link do?
+- What is SEO?
+    - What best practices should we follow wrt images and links for SEO?
