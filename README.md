@@ -28,3 +28,4 @@ Oct - Dec 2024
 - Oct 10
     - How to select a element by the attribute it has - select images that have an alt text provided, select all links whose href is https://google.com
     - Find out how + and ~ combinator work
+    - Try some text and font related properties that have not be discussed
