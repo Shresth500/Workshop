@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Box model</title>
+        <style>
+            body {
+                margin: 0;
+            }
+
+            div {
+                *box-sizing: border-box; /* with this setting, width includes padding and border widths */
+                /* min-width: 400px;
+                max-width: 800px; */
+                /* width: 600px;*/ /* width is by default for content area */
+                width: 50%;
+                padding: 2em; /* for padding, em is a multiple of the font-size of the element */
+                border: 1px solid black;
+                margin: 16px 32px; /* vertical margin collapses */
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque
+            vitae beatae nobis est qui ex omnis sint animi natus excepturi
+            possimus, eaque non explicabo commodi fuga atque nemo. Vitae, odit.
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis
+            nemo hic ipsa quaerat quis fugit temporibus aut voluptatem modi,
+            dignissimos ratione praesentium aliquam eius a, ab autem?
+            Architecto, deleniti vitae.
+        </div>
+        <div style="margin-top: 24px">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque
+            vitae beatae nobis est qui ex omnis sint animi natus excepturi
+            possimus, eaque non explicabo commodi fuga atque nemo. Vitae, odit.
+        </div>
+        <div>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque
+            vitae beatae nobis est qui ex omnis sint animi natus excepturi
+            possimus, eaque non explicabo commodi fuga atque nemo. Vitae, odit.
+        </div>
+    </body>
+</html>
