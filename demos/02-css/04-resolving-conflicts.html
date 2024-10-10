@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Conflicts in styling</title>
+        <style>
+            /*
+                Specificity: ( a, b, c, d )
+            */
+
+            /* ( 0, 1, 2, 1 ) */
+            p.para.intro#para-1 {
+                color: brown;
+            }
+
+            /* ( 0, 1, 1, 1 ) */
+            p.para#para-1 {
+                color: purple;
+            }
+
+            /* ( 0, 0, 1, 1 ) */
+            p.para {
+                color: goldenrod;
+            }
+
+            /* ( 0, 0, 1, 0 ) */
+            .para {
+                color: green;
+            }
+
+            /* ( 0, 0, 0, 1 ) */
+            p {
+                color: blue;
+            }
+
+            /* ( 0, 0, 0, 1 ) */
+            p {
+                color: red;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- inline style is most "specific" -->
+
+        <!-- ( 1, 0, 0, 0 ) -->
+        <!-- <p style="color: red"> -->
+
+        <!-- <div class="para"></div> -->
+
+        <p class="para intro" id="para-1">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis
+            deleniti unde, sapiente est quia dolorem ipsam eum excepturi nostrum
+            ea nesciunt possimus, molestiae ad amet obcaecati enim laudantium
+            blanditiis ullam.
+        </p>
+    </body>
+</html>
