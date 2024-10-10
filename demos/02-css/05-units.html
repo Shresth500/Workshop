@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <style>
+            /* "r"em -> "r"oot element -> i.e. html element */
+
+            /* useful for chaging font-size of text on the page - we simply need to manipulate size for root element through JS / media queries - and it changes for the entire page */
+
+            /* Mobile-first approach in Responsive Web Designing (RWD) when you give default styling, give it assuming mobile phones - so we set a small font-size */
+
+            /* phone */
+            html {
+                font-size: 10px;
+            }
+
+            div {
+                font-size: 24px;
+            }
+
+            p {
+                font-size: 1.25em;
+            }
+
+            section {
+                font-size: 1.5rem; /* 1.5 * 10px = 15px */
+            }
+
+            /* tablets, laptopsn */
+            /* print, screen */
+            @media all and (min-width: 768px) {
+                html {
+                    font-size: 16px;
+                }
+            }
+
+            /* smart tv */
+            /* print, screen */
+            @media all and (min-width: 2048px) {
+                html {
+                    font-size: 24px;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas
+            deserunt culpa sed, temporibus reprehenderit molestias quasi magnam,
+            voluptates molestiae animi nemo excepturi veniam sint deleniti
+            doloribus repellendus, suscipit ipsum quam?
+
+            <p>A para</p>
+        </div>
+
+        <section>This is a section</section>
+    </body>
+</html>

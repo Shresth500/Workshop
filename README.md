@@ -9,6 +9,10 @@ Oct - Dec 2024
 - Mid-training - Hands-on assessment
 - End of training - Capstone project
 
+## Refereces
+- https://www.w3schools.com/
+- https://developer.mozilla.org/en-US/docs/Web
+
 ## Assignments
 - Oct 9
     - How to rotate an image by 90 degrees. How to make an image larger (2x).
