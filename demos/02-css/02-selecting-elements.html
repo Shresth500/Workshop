@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <style>
+            /* space - "within" - select p "within" section */
+            section p {
+                color: crimson;
+            }
+
+            section a {
+                text-decoration: none;
+            }
+
+            /* link which is the child of section */
+            section > a {
+                color: goldenrod;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- EXERCISE: How to select a element by the attribute it has - select images that have an alt text provided, select all links whose href is https://google.com -->
+         <!-- EXERCISE: FInd out how + and ~ combinator work -->
+        <h1>Heading 1</h1>
+
+        <section>
+            <h2>Heading 1.1</h2>
+            <a href="https://google.com">Link 1 within p within section</a>
+            <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Inventore quod sequi animi iusto id. Corporis quasi eos saepe
+                sequi ipsa beatae aperiam, quaerat illum molestias consectetur,
+                nesciunt est, voluptatem magnam.
+                <a href="https://google.com">Link 2 within p within section</a>
+            </p>
+        </section>
+
+        <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum
+            eveniet, incidunt in eaque soluta rerum, debitis consectetur et
+            placeat cum dicta laudantium aperiam libero quidem. Voluptates
+            labore aliquid beatae libero.
+            <a href="https://google.com">Link 3 within p within section</a>
+        </p>
+    </body>
+</html>
