@@ -5,34 +5,28 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Flex box</title>
         <style>
+            * {
+                box-sizing: border-box;
+            }
+
             .parent {
                 display: flex;
+                justify-content: space-between;
                 padding: 10px;
                 border: 1px solid crimson;
-                flex-wrap: wrap;
-                /* overflow: auto; */
-                text-align: left;
                 width: fit-content;
             }
 
             .child {
-                white-space: nowrap;
                 padding: 10px;
                 border: 1px solid black;
-                text-align: right;
-            }
 
-            .child:nth-child(2) {
-                /* white-space: initial; */
+                flex-basis: 30%;
             }
         </style>
     </head>
     <body>
         <div class="parent">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-            Voluptatibus exercitationem dignissimos eius voluptate quam. Nam
-            repellendus sunt, expedita nisi, reiciendis beatae odit quos ad,
-            earum perspiciatis corporis quia laudantium similique?
             <div class="child">
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit.
                 Accusamus, vero fuga tempora hic repellat dignissimos,
