@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Flex box</title>
+        <style>
+            * {
+                box-sizing: border-box;
+            }
+
+            .parent {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 10px;
+                border: 1px solid crimson;
+                width: fit-content;
+            }
+
+            .child {
+                padding: 10px;
+                border: 1px solid black;
+
+                flex-basis: 20%;
+            }
+
+            .child:nth-child(1) {
+                flex-grow: 1;
+            }
+
+            .child:nth-child(2) {
+                flex-grow: 2;
+            }
+
+            .child:nth-child(3) {
+                flex-grow: 3;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="parent">
+            <div class="child">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Accusamus, vero fuga tempora hic repellat dignissimos,
+                perferendis error sint cupiditate ea incidunt exercitationem
+                ipsa ad, eum esse quibusdam voluptas praesentium officia. Lorem
+                ipsum dolor sit amet consectetur adipisicing elit. Sequi
+                officia, illo possimus excepturi incidunt consequuntur soluta
+                nulla similique reiciendis est placeat suscipit perspiciatis
+                odit repellat commodi architecto minus temporibus qui?
+            </div>
+            <div class="child">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Accusamus, vero fuga tempora hic repellat dignissimos,
+                perferendis error sint cupiditate ea incidunt exercitationem
+                ipsa ad, eum esse quibusdam voluptas praesentium officia.
+            </div>
+            <div class="child">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Accusamus, vero fuga tempora hic repellat dignissimos,
+                perferendis error sint cupiditate ea incidunt exercitationem
+                ipsa ad, eum esse quibusdam voluptas praesentium officia.
+            </div>
+        </div>
+    </body>
+</html>
