@@ -1,6 +1,20 @@
+html {
+    font-size: 10px;
+}
+
 .link-test {
     text-decoration: none;
     background-color: rgb(12, 151, 142);
     padding: 6px;
     border-radius: 4px;
+}
+
+.hero {
+    width: 400px;
+    margin: 0 auto;
+}
+
+.link-video {
+    font-size:
+    margin: 0 auto;
 }

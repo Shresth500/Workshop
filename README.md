@@ -35,6 +35,7 @@ Oct - Dec 2024
     - How to contain floats using `clearfix` class and `overflow` property
     - Explore `flex-shrink` which is useful when the children overflow the parent
     - Explore `background`, `font`, and `flex` shorthand properties
+    - Complete Menu 3 os Lysnna Website
 
 ## Presentations
 - Explore what is "offset parent" and how `z-index` is affected by it (Manish)

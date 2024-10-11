@@ -16,6 +16,22 @@
     color: #333;
 }
 
+.text-center {
+    text-align: center;
+}
+
+.text-xs {
+    font-size: 1.2rem;
+}
+
+.text-sm {
+    font-size: 1.6rem;
+}
+
+.text-xl {
+    font-size: 3.6rem;
+}
+
 .d-flex {
     display: flex;
 }
@@ -26,4 +42,36 @@
 
 .align-items-center {
     align-items: center;
+}
+
+.btn {
+    display: inline-block;
+    padding: 16px;
+    border-radius: 4px;
+    text-decoration: none;
+    *transition: transform 250ms;
+}
+
+.btn:hover {
+    *transform: scale(1.05);
+    animation: pulse 300ms;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.05);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+.btn-light {
+    background-color: white;
+    color: #333;
 }
