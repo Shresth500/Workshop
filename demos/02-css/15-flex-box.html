@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Flex box</title>
+        <style>
+            .parent {
+                display: flex;
+                padding: 10px;
+                border: 1px solid crimson;
+                flex-wrap: wrap;
+                /* overflow: auto; */
+            }
+
+            .child {
+                white-space: nowrap;
+                padding: 10px;
+                border: 1px solid black;
+            }
+
+            .child:nth-child(2) {
+                white-space: initial;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="parent">
+            <div class="child">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Accusamus, vero fuga tempora hic repellat dignissimos,
+                perferendis error sint cupiditate ea incidunt exercitationem
+                ipsa ad, eum esse quibusdam voluptas praesentium officia.
+            </div>
+            <div class="child">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione
+                ipsa repellendus quis. Excepturi tenetur, natus voluptatibus
+                amet minus beatae veritatis, eligendi qui nemo et id inventore
+                accusantium minima nihil aspernatur! Lorem ipsum, dolor sit amet
+                consectetur adipisicing elit. Repellat eveniet fugit dolorum
+                laboriosam modi. Facilis necessitatibus voluptas, cum minus nemo
+                eos. Corrupti eum ex perspiciatis in maxime totam asperiores
+                enim?
+            </div>
+            <div class="child">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt,
+                vero. Dolorem dolores autem facere tempora est nostrum?
+                Excepturi, ex accusamus non quis mollitia, cupiditate, quas
+                dolores tempore doloribus illum quo!
+            </div>
+        </div>
+    </body>
+</html>

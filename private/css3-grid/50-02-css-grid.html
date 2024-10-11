@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            .container {
+                display: grid;
+                
+                /* change this to row and check where the children 5 - 12 appear */
+                grid-auto-flow: column;
+                
+                grid-column-gap: 10px;
+                grid-row-gap: 20px;
+
+                /* the layout for first 4 children is decided. Rest are laid out in "extra columns" since grid-auto-flow is column, and get dimensions automatically (extra width is distributed equally between children 5 - 12) */
+                grid-template-rows: 50px 100px; /* height for 2 rows */
+                grid-template-columns: 200px 300px; /* width for 2 columns */
+                
+                padding: 10px;
+                border: 1px solid crimson;
+            }
+
+            .item {
+                background-color: gold;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+            <div class="item">4</div>
+            <div class="item">
+                5
+                <br />
+                5
+            </div>
+            <div class="item">6</div>
+            <div class="item">7</div>
+            <div class="item">8</div>
+            <div class="item">9</div>
+            <div class="item">10</div>
+            <div class="item">11</div>
+            <div class="item">12</div>
+        </div>
+    </body>
+</html>

@@ -9,7 +9,7 @@ Oct - Dec 2024
 - Mid-training - Hands-on assessment
 - End of training - Capstone project
 
-## Refereces
+## References
 - https://www.w3schools.com/
 - https://developer.mozilla.org/en-US/docs/Web
 
@@ -36,3 +36,4 @@ Oct - Dec 2024
 
 ## Presentations
 - Explore what is "offset parent" and how `z-index` is affected by it (Manish)
+- Explore position sticky (the element will stick to its scrollable parent)
