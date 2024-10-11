@@ -6,6 +6,11 @@ body {
     font-size: 1.6rem;
 }
 
+.section {
+    padding: 4rem;
+    *width: fit-content;
+}
+
 .link-test {
     text-decoration: none;
     background-color: rgb(12, 151, 142);
@@ -19,6 +24,10 @@ body {
 }
 
 .link-video {
-    font-size:
-    margin: 0 auto;
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    background-color: rgb(12, 151, 142);
+    padding: 16px 24px;
+    border-radius: 24px;
 }

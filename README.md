@@ -36,6 +36,7 @@ Oct - Dec 2024
     - Explore `flex-shrink` which is useful when the children overflow the parent
     - Explore `background`, `font`, and `flex` shorthand properties
     - Complete Menu 3 os Lysnna Website
+    - Complete the hero section on Lyssna website
 
 ## Presentations
 - Explore what is "offset parent" and how `z-index` is affected by it (Manish)

@@ -32,6 +32,10 @@
     font-size: 3.6rem;
 }
 
+.text-nowrap {
+    white-space: nowrap;
+}
+
 .d-flex {
     display: flex;
 }

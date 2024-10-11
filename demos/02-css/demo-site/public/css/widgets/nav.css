@@ -3,6 +3,7 @@
     align-items: center;
     justify-content: space-between;
     padding: 36px 0;
+    *width: fit-content;
 }
 
 .nav-main a {
@@ -18,6 +19,10 @@
 
 .menu-center {
     gap: 30px;
+}
+
+.menu-center li {
+    white-space: nowrap;
 }
 
 .menu-center .fa-solid {
