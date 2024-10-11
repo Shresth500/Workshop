@@ -5,9 +5,13 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>position</title>
         <style>
+            body {
+                margin: 0;
+            }
+
             div {
                 height: 200px;
-                padding: 16px;
+                /* padding: 16px; */
             }
 
             .bg-green {
@@ -16,11 +20,14 @@
                 width: 100%;
                 /* top, left, bottom, right -> available for non-static position */
                 /* bottom: 0px; */
-                top: 466px;
+                top: 100px; /* 464px */
+                z-index: 1;
             }
 
             .bg-red {
                 background-color: lightpink;
+                position: relative;
+                z-index: 2;
             }
         </style>
     </head>

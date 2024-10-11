@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Posiiton absolute</title>
+        <style>
+            div {
+                height: 200px;
+                padding: 16px;
+            }
+
+            .box {
+                position: relative; /* non-static */
+                border: 1px solid black;
+                padding: 32px;
+            }
+
+            .bg-green {
+                background-color: lightgreen;
+            }
+
+            .bg-red {
+                background-color: lightpink;
+                position: absolute; /* you lace this wrt any ancestor */
+                top: 0px;
+            }
+        </style>
+    </head>
+    <body>
+        <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas
+            autem id harum qui minima nobis sed placeat accusantium tempora.
+            Ipsam adipisci expedita ipsum repellat officiis voluptate libero
+            voluptatem obcaecati amet. Quas ad adipisci id quae, dolor voluptas
+            odio in sed consequatur facere cumque minima iure corrupti labore
+            fugit at, dolores illum quis! Ea fugit hic ipsam totam, molestiae ex
+            deserunt! Facere laborum ex nesciunt dolorum quia aliquam aut
+            suscipit ab voluptatem ipsum maiores sapiente iste a corrupti, porro
+            molestiae neque? Autem molestiae doloribus quis eaque sunt
+            temporibus ad earum impedit! Dicta odit nisi sed mollitia maiores
+            commodi dolores consectetur minima tempora sit necessitatibus iusto
+            culpa repellendus dolorem ratione, velit beatae fugiat eveniet, hic
+            suscipit labore sequi perspiciatis veniam dignissimos. Similique.
+            Asperiores magni rerum assumenda similique saepe blanditiis quas
+            tempore doloremque eaque neque praesentium accusamus culpa facere
+            sint non libero, et ab odio in. Et, impedit fuga delectus
+            consequuntur fugit asperiores!
+        </p>
+        <section class="box">
+            <div class="bg-green">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Voluptatem sunt ratione eius minus debitis porro nam? Saepe
+                quibusdam dicta perferendis, repellendus quae deserunt, hic
+                libero sunt sint quis molestias quos? Lorem ipsum dolor sit
+                amet, consectetur adipisicing elit. Totam expedita incidunt
+                voluptate minus animi, et possimus fuga excepturi officiis
+                beatae, dolore, doloremque autem velit rerum esse. Maiores,
+                dolore deserunt. Explicabo! Ipsam porro repudiandae voluptatibus
+                accusantium adipisci quia consectetur eos. Commodi voluptates
+                pariatur porro eum sequi modi nesciunt placeat, libero animi in
+                fugit voluptate dolorum veniam velit mollitia rerum nulla?
+                Beatae. Quos nisi molestias aliquam qui minima, sapiente,
+                reprehenderit impedit culpa explicabo voluptatem nemo quia
+                tempore obcaecati incidunt enim ratione labore iste id suscipit
+                sit itaque quisquam. Harum reiciendis ullam tempora. Repellat
+                nisi, ducimus molestiae et eos provident, ad quidem aut
+                repudiandae sit voluptatum necessitatibus explicabo eveniet eum
+                ipsum id rerum hic enim. Repellendus unde ipsa consequuntur,
+                temporibus dolor sunt delectus! Ipsum corrupti repellendus
+                harum, aut excepturi molestiae inventore veritatis ut, molestias
+                culpa quod, officiis quam quasi. Eligendi, voluptate, rerum,
+                iure magnam distinctio provident cupiditate corrupti beatae
+                error natus in laboriosam?
+            </div>
+            <div class="bg-red">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque
+                minus, mollitia illum possimus impedit, consequatur iste
+                asperiores sit nam at rem, eius dignissimos maiores dolor amet
+                illo dicta est omnis! Pariatur iste rem hic nobis quibusdam
+                mollitia sit. Asperiores at necessitatibus, maxime debitis
+                accusantium natus? Harum vel ab quo ipsa quasi, necessitatibus
+                deleniti rem reprehenderit doloremque, facere est laborum
+                nesciunt!
+            </div>
+        </section>
+    </body>
+</html>

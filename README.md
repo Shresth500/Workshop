@@ -33,3 +33,6 @@ Oct - Dec 2024
 
 - Oct 11
     - How to contain floats using `clearfix` class and `overflow` property
+
+## Presentations
+- Explore what is "offset parent" and how `z-index` is affected by it (Manish)
