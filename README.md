@@ -30,3 +30,6 @@ Oct - Dec 2024
     - Find out how + and ~ combinator work
     - Try some text and font related properties that have not be discussed
     - Try `box-shadow` property
+
+- Oct 11
+    - How to contain floats using `clearfix` class and `overflow` property
