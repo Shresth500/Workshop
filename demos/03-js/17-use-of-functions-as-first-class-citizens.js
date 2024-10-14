@@ -12,7 +12,7 @@ const john = {
 };
 
 const getEnglishTitle = (person) => person.gender === 'female' ? 'Ms.' : 'Mr.';
-// const getFrenchTitle = ;
+// const getFrenchTitle = (person) => person.gender === 'female' ? 'Madame' : 'Monsieur';
 
 greet(john, getEnglishTitle);
 
