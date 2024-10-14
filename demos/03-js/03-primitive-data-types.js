@@ -13,7 +13,7 @@ console.log(message1);
 console.log(message2);
 console.log(message3);
 
-// string interpolation - supported inly backtick-quoted string
+// string interpolation - supported only in backtick-quoted string
 // const message4 = `The number of items =` + quantity + ". Please confirm it is correct."
 const message4 = `The number of items = ${quantity}. Please confirm it is correct.`;
 console.log(message4);
