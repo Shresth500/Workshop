@@ -40,6 +40,7 @@ Oct - Dec 2024
 
 - Oct 14
     - Explore how you can create 2, and higher dimension arrays
+    - Explore `while` and `do..while` loops
 
 ## Presentations
 - Oct 14

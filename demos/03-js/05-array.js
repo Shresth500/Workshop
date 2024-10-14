@@ -26,6 +26,7 @@ console.log(primes);
 // Array can have values of mixed data type
 primes[primes.length] = 31;
 primes.push(37); // add to the end of the array using push();
+primes.push("Forty One");
 console.log(primes);
 
 // Explore how you can create 2, and higher dimension arrays
