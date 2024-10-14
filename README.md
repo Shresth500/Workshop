@@ -38,6 +38,9 @@ Oct - Dec 2024
     - Complete Menu 3 os Lysnna Website
     - Complete the hero section on Lyssna website
 
+- Oct 14
+    - Explore how you can create 2, and higher dimension arrays
+
 ## Presentations
 - Oct 14
     - Explore what is "offset parent" and how `z-index` is affected by it (Manish)

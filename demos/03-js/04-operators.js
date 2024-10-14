@@ -26,7 +26,7 @@ console.log(1 < 2 && 2 < 3); // true
 console.log(2 < 1 && 2 < 3); // false (checks only 2 < 1 and stops) - short-circuit evluation
 // similarly ||
 
-// equivalent of false - if( values ) {} - "falsy" value
+// equivalent of false - if( value ) {} else { ... } - "falsy" value
 // false, 0, "", null, undefined, NaN - any other value is  truthy
 // Truthy -> " ", [], {}, -1, 0.5, any function
 let a = 0;
