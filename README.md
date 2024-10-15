@@ -45,6 +45,7 @@ Oct - Dec 2024
 - Oct 15
     - Explore use of array `reduce()`
     - Explore methods of `Intl` object (for formatting dates you an use these)
+    - What are the ways to create a proper copy of an array? - Chat GPT Exercise
 
 ## Presentations
 - Oct 14

@@ -1,9 +1,12 @@
 // ... -> spread
 // to copy array items as comma-separated value
+
+// we have seen this earlier...
 const primes = [2, 3, 5, 7, 11];
 const anotherPrimes = primes; // copy by reference
-anotherPrimes.push(13);
+anotherPrimes.push(13); // original array is affected
 
+// copying arrays with spread...
 // const yetAnotherPrimes = [ primes[0], primes[1], primes[2], primes[3], primes[4] ]
 const yetAnotherPrimes = [...primes];
 yetAnotherPrimes.push(17);
@@ -52,6 +55,3 @@ console.log(personsCopy);
 const arr1 = [1, 2, 3], arr2 = [4, 5, 6];
 const arr3 = [...arr1, ...arr2];
 console.log(arr3);
-
-
-// to copy object key-value pairs to another object
