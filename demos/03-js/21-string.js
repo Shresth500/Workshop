@@ -8,6 +8,7 @@ console.log(quote.indexOf('greater'));
 console.log(quote.includes('great'));
 console.log(quote.includes('greater'));
 
+// Strings are immutable
 const uppercaseQuote = quote.toUpperCase();
 
 console.log('quote =', quote);
@@ -22,4 +23,6 @@ const trimmedName = name.trim();
 console.log(name);
 console.log(trimmedName);
 
-// Strings are immutable
+const names = 'Debasis, Sujan, Charu';
+const namesArr = names.split(', ');
+console.log(namesArr);
