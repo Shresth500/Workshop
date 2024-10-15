@@ -49,4 +49,9 @@ personsCopy.push({
 console.log(persons);
 console.log(personsCopy);
 
+const arr1 = [1, 2, 3], arr2 = [4, 5, 6];
+const arr3 = [...arr1, ...arr2];
+console.log(arr3);
+
+
 // to copy object key-value pairs to another object
