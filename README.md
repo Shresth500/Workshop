@@ -44,6 +44,7 @@ Oct - Dec 2024
 
 - Oct 15
     - Explore use of array `reduce()`
+    - Explore methods of `Intl` object (for formatting dates you an use these)
 
 ## Presentations
 - Oct 14

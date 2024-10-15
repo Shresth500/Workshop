@@ -1,3 +1,4 @@
+// Q.3 in Strings, Arrays section
 const phones = [
     {
         name: 'Samsung Galaxy S10+ Plus', price: 620, type: 'refurbished',
