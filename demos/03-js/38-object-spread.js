@@ -46,5 +46,3 @@ johnCopy.address.pinCode = 560001;
 
 console.log(john);
 console.log(johnCopy);
-
-
