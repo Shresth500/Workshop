@@ -9,10 +9,16 @@ const payroll = {
         Finance: 20
     },
     raise: function () {
-        this.employees.forEach(function (employee) {
+        // let that = this;
+
+        this.employees.forEach((employee) => { // we must use arrow function in order to carry the "this" from the raise() function to this inner iterator function
             const dept = employee.dept;
 
             const salary = employee.salary;
+
+            console.log('this =', this);
+
+            // const hikePercentage = that.hikePercentage[dept];
             const hikePercentage = this.hikePercentage[dept];
 
             employee.salary = ((100 + hikePercentage) / 100) * salary;
