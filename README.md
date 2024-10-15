@@ -42,6 +42,9 @@ Oct - Dec 2024
     - Explore how you can create 2, and higher dimension arrays
     - Explore `while` and `do..while` loops
 
+- Oct 15
+    - Explore use of array `reduce()`
+
 ## Presentations
 - Oct 14
     - Explore what is "offset parent" and how `z-index` is affected by it (Manish)

@@ -42,13 +42,15 @@ console.log(namesArr);
 
 const numbersArr = [20, 56, 34, 12, 90, 76, 100, 48, 22, 45, 37];
 numbersArr.sort((x, y) => {
-    if (x < y) {
-        return -1;
-    } else if (x === y) {
-        return 0;
-    } else {
-        return 1;
-    }
+    // if (x < y) {
+    //     return -1;
+    // } else if (x === y) {
+    //     return 0;
+    // } else {
+    //     return 1;
+    // }
+
+    return x - y;
 });
 console.log(numbersArr);
 
@@ -69,12 +71,12 @@ const persons = [
         name: 'Mary',
         age: 60
     },
-]
+];
 
 persons.sort(
     (personA, personB) => {
         if (personA.age < personB.age) {
-            return -1
+            return -1;
         } else if (personA.age === personB.age) {
             return 0;
         } else {
