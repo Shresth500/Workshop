@@ -48,3 +48,5 @@ Oct - Dec 2024
         - Stacking context: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_positioned_layout/Understanding_z-index/Stacking_context
         - Oct 16 - demo on remaining topic
     - Explore position sticky (the element will stick to its scrollable parent)
+- Oct 21
+    - call(), apply() and bind(). What are these methods? What is the difference between them? by Suvham
