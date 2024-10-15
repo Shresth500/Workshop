@@ -20,7 +20,19 @@ const iPhone11 = {
 };
 
 // create the variables using destructuring - the variables should have values as shown below.
-// destructure here...
+const {
+    name,
+    manufacturer: brand,
+    specs: {
+        memory: {
+            value: ram
+        },
+        cameras: {
+            rear: rearCamera
+        },
+        availableColors: [, secondColor]
+    },
+} = iPhone11
 
 // below line logs - iPhone 11   Apple   128   12 MP Ultra Wide   Green
 console.log(name, brand, ram, rearCamera, secondColor);
