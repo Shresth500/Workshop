@@ -20,7 +20,7 @@ const p = sumAsync(12, 13)
 // g will be called when the promise gets the result
 p
     .then(
-        (result1) => { // g
+        result1 => { // g
             console.log('result1 = ', result1);
 
             // sumAsync(result1, 14).then(
