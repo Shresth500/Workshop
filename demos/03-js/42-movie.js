@@ -20,12 +20,25 @@ class Movie {
     }
 }
 
-const kalki = new Movie('Kalki 2000', ['Amitabh'], 1000);
+// EXERCISE: Created AnimatedMovie as a derived class of Movie
+class AnimatedMovie extends Movie {
+    constructor(name, cast, boxOfficeCollection, yearOfRelease, dubbingArtists = []) {
+        super(name, cast, boxOfficeCollection, yearOfRelease);
+
+        this.dubbingArtists = dubbingArtists;
+    }
+
+    // accepts artists array
+    addDubbingArtists(artists) {
+        this.dubbingArtists.push(...artists);
+    }
+}
+
+// method - addDubbingArtists()
+
+const kalki = new AnimatedMovie('Kalki 2000', ['Amitabh'], 1000, undefined, ['Amitabh']);
 kalki.addToCast('Prabhas');
 kalki.addToCollection(200);
+kalki.addDubbingArtists(['Artist 1', 'Artist 2']);
 
 console.log(kalki);
-
-// EXERCISE: Created AnimatedMovie as a derived class of Movie
-// data member -> dubbingArtists
-// method - addDubbingArtists()
