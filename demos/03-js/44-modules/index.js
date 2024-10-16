@@ -12,3 +12,9 @@ jane.promote();
 
 console.log(john);
 console.log(jane);
+
+// Steps
+// npm init -y
+// npm i http-server
+// add "start": "..." in package.json
+// npm start
