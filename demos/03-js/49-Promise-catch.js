@@ -33,9 +33,10 @@ sumAsync(12, 13)
     )
     .catch(
         error => { // called in case of failure
+            // to do different things for different types of errors check the error type using instanceof operator
             // error instanceof TypeError
             // error instanceof RangeError
-            
+
             console.log(error.message);
         }
     );
