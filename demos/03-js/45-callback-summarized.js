@@ -1,5 +1,7 @@
 function sumAsync(x, y, f) {
 
+    // console.log(typeof f);
+
     setTimeout(
         () => {
             // return x + y;
