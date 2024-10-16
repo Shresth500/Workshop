@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body>
+        <button>Click me</button>
+        <a href="https://google.com">Google search page</a>
+
+        <script>
+            const button = document.querySelector("button");
+
+            // on<event> -> onclick, onmouseover, ondblclick
+            // the browser will execute the function when the user clicks on the button
+
+            // you cannot set up multiple event handlers
+            // button.onclick = function () {
+            //     alert("Button was clicked");
+            // };
+
+            // button.onclick = function () {
+            //     alert("Button was clicked (2)");
+            // };
+
+            // preferred way to set up event handlers
+            button.addEventListener("click", function (event) {
+                console.log(event); // has extra details about the event
+                alert("Button click");
+            });
+
+            button.addEventListener("click", function (event) {
+                alert("Button click (2)");
+            });
+
+            // handle link click
+            const link = document.querySelector("a");
+            link.addEventListener("click", function (event) {
+                // blocking function - rest of JS code cannot execute till action is taken
+                if (
+                    confirm(
+                        "Are you sure you want to go to Google search page?"
+                    ) === false
+                ) {
+                    event.preventDefault(); // prevents the default action of the browser - the next page will not be loaded
+                }
+            });
+        </script>
+    </body>
+</html>

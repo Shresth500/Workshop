@@ -40,13 +40,23 @@
         <h1>Document Object Model (DOM)</h1>
         <hr />
 
-        <div id="main-message">You message was sent successfully</div>
+        <div id="main-message" class="user-message">
+            You message was sent successfully
+        </div>
 
         <script>
             setTimeout(() => {
                 document.body.children[0].innerText = "New text within heading";
 
-                const mainMessage = document.getElementById("main-message");
+
+
+                // NodeList (like an array)
+                // multiple node selection
+                // const mainMessages = document.querySelectorAll(".user-message");
+
+                // const mainMessage = document.getElementById("main-message");
+                // querySelector is for single node selection
+                const mainMessage = document.querySelector(".user-message");
                 mainMessage.innerText = "You data was saved";
 
                 // manipulate inline styling
