@@ -45,9 +45,19 @@ const doSomething = async () => {
 };
 
 console.log(1);
-/*const result = */doSomething().then(
-    result => { // g
-        console.log('result =', result);
-    }
-);
+
+doSomething()
+    .then(
+        result => { // g
+            console.log('result =', result);
+
+            return doSomething()
+        }
+    )
+    .then(
+        result => { // g
+            console.log('result =', result);
+        }
+    )
+
 console.log(4);
