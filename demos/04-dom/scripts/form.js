@@ -42,4 +42,6 @@ phoneEl.addEventListener('blur', function () {
     phoneElTouched = true;
 
     validatePhone.call(phoneEl);
-})
+});
+
+console.log('script finished execution');
