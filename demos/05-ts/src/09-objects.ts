@@ -17,3 +17,5 @@ const jane: Person = {
 };
 
 ++jane.age; // error because age is readonly
+
+export {};
