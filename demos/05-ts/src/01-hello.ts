@@ -5,5 +5,4 @@ quantity = 10;
 
 console.log(quantity);
 
-export // quantity
- {};
+export {};
