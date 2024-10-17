@@ -16,4 +16,4 @@ const jane: Person = {
     age: 28,
 };
 
-// ++jane.age; // error because age is readonly
+++jane.age; // error because age is readonly
