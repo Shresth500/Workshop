@@ -23,10 +23,14 @@ function validatePhone() {
     const value = this.value;
 
     if (phoneElTouched) {
-        if (mobilePhonePat.test(value)) {
-            this.nextElementSibling.innerText = '';
+        const errorEl = this.nextElementSibling;
+
+        if (value == '') {
+            errorEl.innerText = 'Phone number is required';
+        } else if (mobilePhonePat.test(value)) {
+            errorEl.innerText = '';
         } else {
-            this.nextElementSibling.innerText = 'Phone number is not valid. It should have 10 digits.'
+            errorEl.innerText = 'Phone number is not valid. It should have 10 digits.'
         }
     }
 }
