@@ -7,3 +7,6 @@ let distance: NS = "Thousand Two Hundred";
 distance = 1200;
 
 // NOTE: Type alias works with primitives and non-primitives
+
+export type { NS };
+export { distance };
