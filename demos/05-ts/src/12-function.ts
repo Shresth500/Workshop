@@ -13,6 +13,7 @@ console.log(sum(12, 13));
 // ----------------
 
 // arrow function syntax for provifing data type of a function
+// This syntax is the ONLY way you can give the type for a function that is acepted as an argument in another function
 type BinaryFunction = (a: number, b: number) => number;
 
 // const add1: (a: number, b: number) => number = function (x, y) {
