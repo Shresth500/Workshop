@@ -4,13 +4,19 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Events</title>
+        <style>
+            .error {
+                color: crimson;
+                font-size: 0.85em;
+            }
+        </style>
     </head>
     <body>
         <form>
             <div>
                 <label for="phone">Mobile phone</label>
                 <input type="tel" id="phone" />
-                <span id="phone-error"></span>
+                <span id="phone-error" class="error"></span>
             </div>
             <div>
                 <label for="otp">OTP</label>
