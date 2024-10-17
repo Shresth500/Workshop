@@ -1,3 +1,4 @@
+// syntax 1
 function sum(x: number, y: number) /*: number*/ {
     return x + y;
 }
@@ -12,6 +13,7 @@ console.log(sum(12, 13));
 
 // ----------------
 
+// syntax 2
 // arrow function syntax for provifing data type of a function
 // This syntax is the ONLY way you can give the type for a function that is acepted as an argument in another function
 type BinaryFunction = (a: number, b: number) => number;

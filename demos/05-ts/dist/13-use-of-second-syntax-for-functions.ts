@@ -6,6 +6,7 @@ type Person = {
 
 type TitleCreator = (p: Person) => string;
 
+// syntax 1
 function greet(person: Person, getTitle: TitleCreator) {
     const title = getTitle(person);
     console.log(`Hello ${title} ${person.name}`);
@@ -16,7 +17,13 @@ const john: Person = {
     gender: "male",
 };
 
-const getEnglishTitle = (person: Person): string => {
+// syntax 1
+// const getEnglishTitle = (person: Person): string => {
+//     return person.gender === "female" ? "Ms." : "Mr.";
+// };
+
+// syntax 2
+const getEnglishTitle: TitleCreator = (person) => {
     return person.gender === "female" ? "Ms." : "Mr.";
 };
 
