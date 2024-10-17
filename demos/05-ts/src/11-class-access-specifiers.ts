@@ -1,22 +1,20 @@
 class Person {
-    readonly name: string;
-    age: number;
-    private nationality = "Indian";
-    spouse?: string;
+    // readonly name: string;
+    // age: number;
+    // nationality = "Indian";
+    // spouse?: string;
 
     constructor(
-        name: string,
-        age: number,
-        nationality?: string /*= 'Indian'*/,
-        spouse?: string
+        public name: string,
+        public age: number,
+        private nationality: string = "Indian",
+        public spouse?: string
     ) {
-        this.name = name;
-        this.age = age;
-
-        if (nationality !== undefined) {
-            this.nationality = nationality;
-        }
-
+        // this.name = name;
+        // this.age = age;
+        // if (nationality !== undefined) {
+        //     this.nationality = nationality;
+        // }
         if (spouse !== undefined) {
             this.spouse = spouse;
         }
