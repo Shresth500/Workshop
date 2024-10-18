@@ -1,4 +1,3 @@
-import { distance } from "./07-type-alias";
 import { Person } from "./10-class";
 
 interface ICanCycle {
