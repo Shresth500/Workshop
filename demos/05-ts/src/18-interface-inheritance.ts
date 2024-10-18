@@ -28,6 +28,7 @@ class TriathlonAthlete implements ICanCycle, ICanSwim, ICanRun {
 
 // --------
 
+// interface-interface inheritance
 interface IPerson {
     readonly name: string;
     age: number;
