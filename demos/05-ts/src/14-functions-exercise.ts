@@ -17,11 +17,13 @@ console.log(contains([1, "hello", 3, true], 3)); // prints true
 console.log(contains([1, "hello", 3, true], 5)); // prints false
 
 // Write a function filter() that accepts an array and another function f (which returns a boolean value). The filter function should work like so.
-const filter = () => {
+type FilterFunction = (x: number) => boolean;
 
+const filter = (arr: number[], filterFunction: FilterFunction) => {
+    return arr.filter(filterFunction);
 };
 
-function isOdd(x) {
+function isOdd(x: number): boolean {
     return x % 2 === 1;
 }
 
