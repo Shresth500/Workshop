@@ -29,8 +29,11 @@ const getEnglishTitle: TitleCreator = (person) => {
 
 greet(john, getEnglishTitle);
 
-// --- EXERCISE ---
-function sum(getValue, ...numbers) {
+// --- EXERCISE : Provide data type the functions in the code below ---
+type TransformFunction = (x: number) => number;
+// type NumberArray = number[];
+
+function sum(getValue: TransformFunction, ...numbers: number[]) {
     let result = 0;
 
     for (let num of numbers) {
@@ -40,7 +43,7 @@ function sum(getValue, ...numbers) {
     return result;
 }
 
-console.log(sum((x) => x, 1, 2)); // 3
+console.log(sum((x: number) => x, 1, 2)); // 3
 console.log(sum((x) => x * x, 1, 2)); // 5
 console.log(sum((x) => x * x, 1, 2, 3)); // 14
 
