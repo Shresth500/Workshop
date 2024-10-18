@@ -66,3 +66,7 @@ class Employee extends Person implements IEmployee {
         );
     }
 }
+
+function f(arr: IPerson[]) {
+    console.log(arr[0].name);
+}
