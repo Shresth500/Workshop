@@ -3,6 +3,7 @@ class Person {
     age: number;
     private nationality = "Indian";
     spouse?: string;
+    protected x: number = 100;
 
     constructor(
         name: string,
@@ -44,5 +45,6 @@ console.log(jane);
 console.log(john.name);
 console.log(john.age);
 // console.log(john.nationality); // error
+// john.x // error
 
-export {};
+export { Person };
