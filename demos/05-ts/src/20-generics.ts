@@ -1,7 +1,7 @@
 // When you have types which are similar, but have some differences in the types that are used within them, you can use "Generics" to reduce the duplication of code
 
 // We create a generic interface
-// A generic type (in this case interface) is a blueprint for creating a real interface
+// A generic type (in this case generic interface) is a blueprint for creating a real type  (in this case interface)
 interface IProduct<NameType, PriceType> {
     name: NameType;
     price: PriceType;
