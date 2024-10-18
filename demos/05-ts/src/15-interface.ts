@@ -22,6 +22,9 @@ class Dog implements ICanTalk {
     }
 }
 
-const arr = [new Human(), new Dog()];
+class Fish {}
+
+// if we include fish, then we cannot iterate through arr and call talk()
+const arr = [new Human(), new Dog() /*, new Fish()*/];
 
 arr.forEach((animal) => animal.talk("Hello"));
