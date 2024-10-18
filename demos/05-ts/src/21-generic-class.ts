@@ -1,7 +1,7 @@
 // ItemType extends { name: string } -> We restrict the allowed ItemType this way (in thic case it should have a name property that is a string)
 class ShoppingCart<ItemType extends { name: string }> {
-    items: ItemType[];
-    customerName: string;
+    private items: ItemType[];
+    private customerName: string;
 
     constructor(customerName: string, items: ItemType[] = []) {
         this.customerName = customerName;
