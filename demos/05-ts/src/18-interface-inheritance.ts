@@ -15,16 +15,20 @@ interface ICanRun {
 // one class can implement multiple interfaces
 class TriathlonAthlete implements ICanCycle, ICanSwim, ICanRun {
     cycle(speedInMS: number, distanceInKms: number) {
-        return distanceInKms / speedInMS;
+        return (distanceInKms * 1000) / speedInMS;
     }
+
     swim(speedInMS: number, distanceInKms: number) {
-        return distanceInKms / speedInMS;
+        return (distanceInKms * 1000) / speedInMS;
     }
 
     run(speedInMS: number, distanceInKms: number) {
-        return distanceInKms / speedInMS;
+        return (distanceInKms * 1000) / speedInMS;
     }
 }
+
+const john = new TriathlonAthlete();
+console.log(john);
 
 // --------
 
