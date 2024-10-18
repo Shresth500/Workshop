@@ -50,3 +50,9 @@ const mappedResult = map([1, 2, 3, 4, 0, 4, 6, 5], (item: number) => {
 // });
 
 // EXERCISE: Create a generic version of contains() function that we worked on earlier
+function contains(arr, value): boolean {
+    return arr.includes(value);
+}
+
+console.log(contains([1, "hello", 3, true], 3)); // prints true
+console.log(contains([1, "hello", 3, true], 5)); // prints false
