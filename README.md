@@ -56,4 +56,4 @@ Oct - Dec 2024
 - Oct 21
     - call(), apply() and bind(). What are these methods? What is the difference between them? by Suvham
     - Explain generic function including inference of the generic type parameters based on a particular function call
-        - Reference: https://www.typescriptlang.org/docs/handbook/2/functions.html
+        - Reference: https://www.typescriptlang.org/docs/handbook/2/functions.html by Shreshth + 1

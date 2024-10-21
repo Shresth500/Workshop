@@ -28,3 +28,5 @@ function isOdd(x: number): boolean {
 }
 
 let filteredList = filter([1, 2, 3, 4, 5, 6, 7, 8], isOdd); // [ 1, 3, 5, 7 ]
+
+export {};
