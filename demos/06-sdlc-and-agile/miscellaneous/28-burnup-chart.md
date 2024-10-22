@@ -72,7 +72,9 @@ A **Burn-Up Chart** is a visual tool used in Agile to **track progress toward a 
 | Day 5   | 30                          | 55              |
 | Day 6   | 40                          | 55              |
 | Day 7   | 50                          | 55              |
+| Day 8   | 55                          | 55              |
 
+![Burnup chart](../artifacts/12-burnup-chart.png)
 ---
 
 ## 6. Interpretation of the Burn-Up Chart

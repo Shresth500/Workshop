@@ -76,6 +76,8 @@ A **Burn-Down Chart** is a visual tool used in Agile to **track the progress** o
 | Day 9   | 5                           |
 | Day 10  | 0                           |
 
+![Burndown chart](../artifacts/11-burndown-chart.png)
+
 ---
 
 ## 6. Interpretation of the Burn-Down Chart
