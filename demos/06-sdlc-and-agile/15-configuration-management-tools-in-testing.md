@@ -31,7 +31,7 @@
 
 ## 3. **JIRA with Configuration Management Add-ons**
 ### Overview:
-- **JIRA** is primarily a project and defect management tool, but with plugins (like **Insight for Jira**), it can be extended to perform configuration management.
+- [**JIRA**](./miscellaneous/11-JIRA-for-configuration-management.md) is primarily a project and defect management tool, but with plugins (like **Insight for Jira**), it can be extended to perform configuration management.
 - It helps track changes to configurations, environments, and test data across test phases.
 
 ### Features:

@@ -70,7 +70,7 @@
 
 ### Mitigation:
 - Continuously **review and validate** test cases and reports.
-- Use **exploratory testing** in addition to tool-based testing to uncover hidden defects.
+- Use [**exploratory testing**](./miscellaneous/23-exploratory-testing.md) in addition to tool-based testing to uncover hidden defects.
 
 ---
 

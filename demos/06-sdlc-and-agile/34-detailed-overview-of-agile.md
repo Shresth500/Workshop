@@ -32,7 +32,7 @@ The Agile Manifesto outlines **four core values**:
 8. Agile processes promote **sustainable development** with a consistent pace.
 9. **Continuous attention to technical excellence** and good design improves agility.
 10. **Simplicity**—maximizing the amount of work not done—is essential.
-11. The best results emerge from **self-organizing teams**.
+11. The best results emerge from [**self-organizing teams**](./miscellaneous/21-self-organizing-teams.md).
 12. Regularly reflect on how to **become more effective**, adjusting processes accordingly.
 
 ---
@@ -141,16 +141,16 @@ Several frameworks implement Agile principles, including:
 
 ## 8. Agile Metrics
 
-1. **Velocity**:
-   - Measures how much work a team completes in a sprint (in terms of story points or hours).
+1. [**Velocity**](./miscellaneous/26-velocity.md):
+   - Measures how much work a team completes in a sprint (in terms of [story points](./miscellaneous/24-story-points.md) or hours).
 
-2. **Burn-Down Chart**:
+2. [**Burn-Down Chart**](./miscellaneous/27-burndown-chart.md):
    - Tracks the amount of remaining work over time in a sprint.
 
-3. **Burn-Up Chart**:
+3. [**Burn-Up Chart**](./miscellaneous/28-burnup-chart.md):
    - Shows progress towards completing the total scope of a release or project.
 
-4. **Lead Time and Cycle Time**:
+4. [**Lead Time and Cycle Time**](./miscellaneous/29-lead-and-cycle-time.md):
    - **Lead Time**: Time from task creation to completion.
    - **Cycle Time**: Time taken from starting the task to completing it.
 

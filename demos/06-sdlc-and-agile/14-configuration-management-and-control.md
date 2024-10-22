@@ -16,7 +16,7 @@
 ### Key Elements of Configuration Management
 - **Configuration Items (CIs)**: These are the elements that are controlled and tracked in the CM process, such as software code, test cases, documentation, test data, and environment setups.
 - **Version Control**: A key aspect of CM is the ability to version control configuration items. This allows teams to track different versions of the software and test assets, ensuring that they can revert to previous versions if needed.
-- **Baseline Management**: A baseline is a fixed reference point in the development and testing process. Baselines are established for code, test cases, and environments to ensure consistency across different test phases.
+- **Baseline Management**: A [baseline](./miscellaneous/10-baseline.md) is a fixed reference point in the development and testing process. Baselines are established for code, test cases, and environments to ensure consistency across different test phases.
 - **Audit and Reporting**: Configuration audits are performed to ensure that the configuration items are consistent and in compliance with the predefined configuration standards.
 
 ### Benefits of Configuration Management
