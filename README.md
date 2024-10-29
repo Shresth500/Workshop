@@ -4,6 +4,9 @@ Oct - Dec 2024
 ## Links
 - [Google Sheet - S/w Setup, Tasks etc.](https://docs.google.com/spreadsheets/d/1cN22RSg9QZIKSnJjBJODqq8zosfNIeFyD40hoiAzppU/edit?usp=sharing)
 
+## Quick share
+https://notepad.pw/ascendion
+
 ## Activities
 - Every Friday - Objective assessment
 - Mid-training - Hands-on assessment
