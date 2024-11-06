@@ -10,6 +10,8 @@ storage:
 systemLog:
   destination: file
   path: /Users/admin/data/logs/logs.log
+net:
+  port: 27018
 ```
 
 To use the above config file
