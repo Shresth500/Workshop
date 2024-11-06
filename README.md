@@ -50,6 +50,9 @@ https://notepad.pw/ascendion
     - Explore methods of `Intl` object (for formatting dates you an use these)
     - What are the ways to create a proper copy of an array? - Chat GPT Exercise
 
+- Nov 6
+    - Q.1. from 07 - Mongo DB Lab Guide
+
 ## Presentations
 - Oct 14
     - Explore what is "offset parent" and how `z-index` is affected by it (Manish)
