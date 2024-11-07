@@ -223,3 +223,183 @@ db.shows.find({
     },
     "webChannel.country": null
 }).count()
+
+// Find all shows whose name contains the word "Last"
+// you can use regular expression instead of string
+db.shows.find({
+    name: /Man/
+}).count();
+
+// case-insensitive match (i = ignore case)
+db.shows.find({
+    name: /Man/i
+}).count();
+
+db.shows.find({
+    name: {
+        $regex: "Man"
+    }
+}).count();
+
+db.shows.find({
+    name: {
+        $regex: "Man",
+        $options: "i"
+    }
+}).count();
+
+// Find all shows whose weight is more than 10 times their average rating
+// (weight) > (10 * rating.average)
+// 168
+db.shows.find(
+    { // filtering clause
+        $expr: {
+            $gt: [
+                "$weight",
+                {
+                    $multiply: [10, "$rating.average"]
+                }
+            ]
+        }
+    },
+    { // projection clause - select the fields you want to view
+        _id: 0,
+        name: 1,
+        weight: 1,
+        "rating.average": 1
+    }
+).count();
+
+// Find all shows where 8% of the weight (0.08 * weight) is less than the average rating value. Make sure the average rating is not null.
+// 200
+db.shows.find(
+    {
+        "rating.average": {
+            $ne: null
+        },
+        $expr: {
+            $lt: [
+                {
+                    $multiply: [0.08, "$weight"]
+                },
+                "$rating.average"
+            ]
+        }
+    }
+).count();
+
+// Find shows that have BOTH Drama and Horror as their genre. Use $all.
+// 17
+db.shows.find({
+    genres: {
+        $all: ['Drama', 'Horror']
+    }
+});
+
+// ii) Find shows that are scheduled on both "Monday" and "Tuesday"
+// 4
+db.shows.find({
+    "schedule.days": {
+        $all: ['Monday', 'Tuesday']
+    }
+}).count()
+
+// rewrite the query above using $and
+// 4
+db.shows.find(
+    {
+        $and: [
+            {
+                "schedule.days": "Monday"
+            },
+            {
+                "schedule.days": "Tuesday"
+            }
+        ]
+    }
+).count();
+
+// Create a new collection and create 6 - 8 documents of students like so.
+const students = [
+    {
+        name: "John",
+        scores: [
+            { subject: "History", score: 80 },
+            { subject: "Geography", score: 75 }
+        ]
+    },
+    {
+        name: "Emma",
+        scores: [
+            { subject: "Math", score: 90 },
+            { subject: "Science", score: 85 }
+        ]
+    },
+    {
+        name: "Liam",
+        scores: [
+            { subject: "English", score: 70 },
+            { subject: "Art", score: 78 },
+            { subject: "Music", score: 82 }
+        ]
+    },
+    {
+        name: "Sophia",
+        scores: [
+            { subject: "History", score: 88 },
+            { subject: "Geography", score: 92 },
+            { subject: "Math", score: 95 }
+        ]
+    },
+    {
+        name: "Noah",
+        scores: [
+            { subject: "Science", score: 60 },
+            { subject: "English", score: 73 },
+            { subject: "Math", score: 77 },
+            { subject: "Physical Education", score: 81 }
+        ]
+    },
+    {
+        name: "Olivia",
+        scores: [
+            { subject: "Art", score: 85 },
+            { subject: "History", score: 78 },
+            { subject: "Science", score: 92 }
+        ]
+    },
+    {
+        name: "Mason",
+        scores: [
+            { subject: "Math", score: 68 },
+            { subject: "Geography", score: 74 }
+        ]
+    },
+    {
+        name: "Ava",
+        scores: [
+            { subject: "English", score: 93 },
+            { subject: "Art", score: 87 },
+            { subject: "Physical Education", score: 76 }
+        ]
+    }
+];
+
+db.students.insertMany( students );
+
+// Create a collection to store scores of students in various subjects. Include name of
+// students in one field, and scores in another (between 0 – 100). Scores is an array of
+// document, each with the subject name and score. Insert some documents so that some
+// subjects are shared among students and some subjects are specific to a student (elective
+// subjects). Now do the following.
+// i) Find all students who have a score of more 90% in some subject and have taken
+// up history
+// ii) Find all students who have a score of more than 90% in history
+// iii) Find all students who have taken up exactly 2 subjects
+// g) Projection operator - $, $slice
+// NOTE: This operator is used on the projection object (second argument) and not the
+// filter object (first argument) – it transforms arrays values that are projected.
+// i)  Find all students who have taken up history and project the matching subject
+// details (i..e history)
+// ii) Find all students who have taken up history and project the first 2 subjects they
+// have in the document.
