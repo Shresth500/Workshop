@@ -1,0 +1,30 @@
+:host {
+  display: flex;
+  //position: relative;
+}
+
+.card-action-buttons {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  padding: 16px;
+}
+
+.card-img-top-wrapper {
+  height: 192px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  //nesting selectors in SCSS
+  .card-img-top {
+    width: 50%;
+  }
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 240px;
+}

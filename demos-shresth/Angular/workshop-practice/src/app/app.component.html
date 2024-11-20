@@ -1,0 +1,10 @@
+<ngb-alert type="info" *ngIf="isOpen" (closed)="toggle()">
+  This app is being built using Angular 18
+</ngb-alert>
+
+<app-toast />
+<app-menu />
+<div class="container">
+  <!--<app-home />-->
+  <router-outlet></router-outlet>
+</div>

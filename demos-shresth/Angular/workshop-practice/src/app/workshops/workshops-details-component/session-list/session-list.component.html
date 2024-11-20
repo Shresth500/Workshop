@@ -1,0 +1,37 @@
+<div *ngIf="!loading && !error && Sessions" ngbAccordion>
+  <app-search-bar
+    [isWrittenSession]="isWrittenSession"
+    [Sessions]="Sessions"
+    [filteredSessions]="filteredSessions"
+    (sessiondata)="getSearchedData($event)"
+  ></app-search-bar>
+  <hr />
+  <div
+    *ngFor="let session of Sessions; trackBy: trackBySessionId"
+    ngbAccordionItem
+  >
+    <h2 ngbAccordionHeader>
+      <button ngbAccordionButton>{{ session.name }}</button>
+    </h2>
+    <div ngbAccordionCollapse>
+      <div ngbAccordionBody class="no-padding">
+        <ng-template>
+          <span class="d-flex spacing-between-elements">
+            <span class="border-left">
+              <app-voting-widget
+                [upVoteCount]="session.upvoteCount"
+                (upvote)="updateVote(session, $event)"
+              />
+            </span>
+            <span class="padding-right">
+              <div>Speaker - {{ session.speaker }}</div>
+              <div>Duration - {{ session.duration }} hr</div>
+              <div>Level - {{ session.level }}</div>
+              <div>Abstract - {{ session.abstract }}</div>
+            </span>
+          </span>
+        </ng-template>
+      </div>
+    </div>
+  </div>
+</div>

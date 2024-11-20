@@ -2,11 +2,11 @@
   "workshops": [
     {
       "name": "Angular JS Bootcamp",
-      "category": "frontend",
+      "id": 1,
       "description": "<p><strong>AngularJS</strong> (also written as <strong>Angular.js</strong>) is a JavaScript-based open-source front-end web application framework mainly maintained by Google and by a community of individuals and corporations to address many of the challenges encountered in developing single-page applications.</p><p>It aims to simplify both the development and the testing of such applications by providing a framework for client-side model–view–controller (MVC) and model–view–viewmodel (MVVM) architectures, along with components commonly used in rich Internet applications. (This flexibility has led to the acronym MVW, which stands for \"model-view-whatever\" and may also encompass model–view–presenter and model–view–adapter.)</p>",
-      "startDate": "2019-01-01",
-      "endDate": "2019-01-03",
-      "time": "9:30 am - 12:30 pm",
+      "startDate": "2019-01-01T04:00:00.000Z",
+      "endDate": "2019-01-03T08:00:00.000Z",
+      "time": "9:30 am - 1:30 pm",
       "location": {
         "address": "Tata Elxsi, Prestige Shantiniketan",
         "city": "Bangalore",
@@ -16,11 +16,9 @@
         "inPerson": true,
         "online": false
       },
-      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/AngularJS_logo.svg/2000px-AngularJS_logo.svg.png",
-      "id": 1
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/AngularJS_logo.svg/2000px-AngularJS_logo.svg.png"
     },
     {
-      "category": "frontend",
       "name": "React JS Masterclass",
       "id": 2,
       "description": "<p><strong>React</strong> (also known as <strong>React.js</strong> or <strong>ReactJS</strong>) is a JavaScript library for building user interfaces. It is maintained by Facebook and a community of individual developers and companies.</p><p>React can be used as a base in the development of single-page or mobile applications. Complex React applications usually require the use of additional libraries for state management, routing, and interaction with an API.</p>",
@@ -57,7 +55,6 @@
       "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/3/32/Mongo-db-logo.png"
     },
     {
-      "category": "backend",
       "name": "Mastering Node JS and Express",
       "description": "<p><strong>Node.js</strong> is an open-source, cross-platform JavaScript run-time environment that executes JavaScript code outside of a browser. Typically, JavaScript is used primarily for client-side scripting, in which scripts written in JavaScript are embedded in a webpage's HTML and run client-side by a JavaScript engine in the user's web browser. Node.js lets developers use JavaScript to write command line tools and for server-side scripting - running scripts server-side to produce dynamic web page content before the page is sent to the user's web browser. Consequently, Node.js represents a \"JavaScript everywhere\" paradigm, unifying web application development around a single programming language, rather than different languages for server side and client side scripts.</p><p>The Node.js distributed development project, governed by the Node.js Foundation, is facilitated by the Linux Foundation's Collaborative Projects program.</p>",
       "startDate": "2019-10-20T07:00:00.000Z",
@@ -76,7 +73,6 @@
       "id": 4
     },
     {
-      "category": "frontend",
       "name": "HTML and CSS",
       "description": "HTML and CSS introduction",
       "startDate": "2019-11-05T07:00:00.000Z",
@@ -96,7 +92,6 @@
       "id": 5
     },
     {
-      "category": "frontend",
       "name": "TypeScript",
       "description": "TypeScript language fundamentals",
       "startDate": "2019-06-24",
@@ -116,7 +111,6 @@
       "id": 6
     },
     {
-      "category": "frontend",
       "name": "Angular",
       "id": 7,
       "description": "<p>Google's <strong>Angular</strong> framework, is a much sought-after skill in the industry today. It is a single-page application (SPA) framework that includes most of the features required to build SPA applications. The Angular training gets you prepared for building enterprise-grade applications using the latest version of Angular.</p>",
@@ -153,7 +147,6 @@
       "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Angular_full_color_logo.svg/512px-Angular_full_color_logo.svg.png"
     },
     {
-      "category": "frontend",
       "name": "Bootstrap Bootcamp",
       "id": 9,
       "description": "<p><strong>Bootstrap</strong> is a front-end web framework that provides useful styles and components for creating responsive web pages quickly. Bootstrap v4 is the latest stable version of this framework and is covered in this bootcamp.</p>",
@@ -172,7 +165,6 @@
       "imageUrl": "https://getbootstrap.com/docs/4.4/assets/brand/bootstrap-solid.svg"
     },
     {
-      "category": "mobile",
       "name": "Apache Cordova",
       "id": 10,
       "description": "<p>Developing a mobile app requires extensive knowledge of native programming techniques for multiple platforms. <strong>Apache Cordova</strong> lets you use your existing skills in web development (HTML, CSS, and JavaScript) to build powerful mobile apps. Your apps also get the power of integration with native device features like the camera and file system.</p><p>In this bootcamp, you will learn to build apps from the Cordova CLI, how to make use of device features like the camera and accelerometer, and how to submit your apps to Google Play Store / Apple App Store.</p>",
@@ -191,7 +183,6 @@
       "imageUrl": "https://upload.wikimedia.org/wikipedia/en/thumb/9/92/Apache_Cordova_Logo.svg/494px-Apache_Cordova_Logo.svg.png"
     },
     {
-      "category": "Version Control",
       "name": "Practical Git",
       "id": 11,
       "description": "<p><strong>Git</strong> is a distributed Version Control System (VCS) created by Linus Torvalds. It is by far the most popular VCS in use today.</p>",
@@ -210,7 +201,6 @@
       "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Git-logo.svg/512px-Git-logo.svg.png"
     },
     {
-      "category": "language",
       "name": "JavaScript Fundamentals",
       "id": 12,
       "description": "<p><strong>JavaScript (JS)</strong> is the language for scripting web pages – to enable user interactions on a web page, communicate with the backend etc.</p><p>The latest versions of JavaScript like ES2015 (ES6) have introduced a plethora of great new features that have found adoption in modern frontend and backend frameworks. A good understanding of JS, especially ES2015 features, lays a strong foundation to get started with frameworks like React and Angular, as also Node.js and Express.</p>",
@@ -227,26 +217,6 @@
         "online": true
       },
       "imageUrl": "https://camo.githubusercontent.com/055e8995558e293e52e92d7c93b9ec49a9ea6c78/68747470733a2f2f63646e2e7261776769742e636f6d2f7a656b652f6a6176617363726970742d79656c6c6f772f6d61737465722f6c6f676f2e737667"
-    },
-    {
-      "name": "C++",
-      "category": "language",
-      "description": "C++",
-      "startDate": "2024-11-19",
-      "endDate": "2024-11-23",
-      "time": "9:30am -12:30am",
-      "location": {
-        "address": "WhiteField",
-        "city": "Bangalore",
-        "state": "Karnataka"
-      },
-      "modes": {
-        "inPerson": true,
-        "online": false
-      },
-      "imageUrl": "data:image/jpeg;base64,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",
-      "createdDate": "Nov 19, 2024",
-      "id": 13
     }
   ],
   "sessions": [
@@ -752,18 +722,6 @@
       "upvoteCount": 0,
       "createdDate": "Nov 18, 2024",
       "id": 46
-    },
-    {
-      "workshopId": 1,
-      "sequenceId": 1,
-      "name": "Angular Nxjs",
-      "speaker": "Shresth",
-      "duration": 2,
-      "level": "Intermediate",
-      "abstract": "Welcome to Angular Nxjs",
-      "upvoteCount": 0,
-      "createdDate": "Nov 19, 2024",
-      "id": 47
     }
   ],
   "users": [

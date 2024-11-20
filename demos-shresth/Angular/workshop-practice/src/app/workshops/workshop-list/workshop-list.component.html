@@ -1,0 +1,84 @@
+<!--@for(workshop of workshops; track workshop.id){
+<div>
+  {{ workshop.name }}
+</div>
+}-->
+
+<!--<div class="d-flex justify-content-center" *ngIf="loading">
+  <div class="spinner-border" role="status">
+    <span class="visually-hidden">Loading...</span>
+  </div>
+</div> -->
+
+<app-loading-spinner *ngIf="loading" variant="success" />
+<app-error-alert *ngIf="error" [error]="error" />
+
+<h1>List of Workshops</h1>
+
+<app-pagination
+  [page]="page"
+  [loading]="loading"
+  [page_limit]="page_limit"
+  [page_1]="page_1"
+  [page_2]="page_2"
+  [page_3]="page_3"
+  (pageChange)="pagination($event)"
+  (paginationChange)="pagination_by_id($event)"
+/>
+
+<app-search-bar
+  [isWrittenWorkshop]="isWrittenWorkshop"
+  [workshops]="workshops"
+  [filteredWorkshop]="filteredWorkshop"
+  (workshopdata)="getSearchedData($event)"
+></app-search-bar>
+
+<div class="btn-group my-3" role="group" aria-label="Filter by Category">
+  @for(cat of categoryList;track cat){
+  <button
+    type="button"
+    class="btn btn-sm"
+    [class]="cat.color"
+    (click)="filterbyCategory(cat.category)"
+  >
+    {{ cat.category }}
+  </button>
+  }
+</div>
+
+<div *ngIf="!loading && !error" class="row">
+  <div
+    *ngFor="let workshop of workshops; trackBy: trackByWorkshopId"
+    class="col-12 col-md-4 my-3 d-flex"
+  >
+    <app-item
+      [workshop]="workshop"
+      (delete)="open(content, workshop)"
+      class="w-100"
+    />
+  </div>
+</div>
+
+<ng-template #content let-modal>
+  <div class="modal-header">
+    <h4 class="modal-title" id="modal-basic-title">Please Confirm deletion!</h4>
+    <button
+      type="button"
+      class="btn-close"
+      aria-label="Close"
+      (click)="modal.dismiss('Cross click')"
+    ></button>
+  </div>
+  <div class="modal-body">
+    <div class="mb-3">
+      You are about to delete a workshop. This action cannot be undone. Are you
+      sure want to proceed ??
+    </div>
+    <div>
+      <button class="btn btn-light" (click)="modal.close('cancel')">
+        Cancel
+      </button>
+      <button class="btn btn-danger" (click)="modal.close('ok')">Ok</button>
+    </div>
+  </div>
+</ng-template>
