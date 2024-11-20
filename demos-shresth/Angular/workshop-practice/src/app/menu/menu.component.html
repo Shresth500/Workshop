@@ -1,0 +1,85 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container">
+    <a class="navbar-brand" routerLink="/" routerLinkActive="active"
+      >Workshops App</a
+    >
+    <button
+      class="navbar-toggler"
+      type="button"
+      (click)="isNavbarCollapsed = !isNavbarCollapsed"
+      aria-controls="navbarNav"
+      aria-expanded="!isNavbarCollapsed"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div
+      id="navbarNav"
+      [ngbCollapse]="isNavbarCollapsed"
+      class="collapse navbar-collapse"
+    >
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a
+            class="nav-link active"
+            aria-current="page"
+            routerLink="/"
+            routerLinkActive="active"
+            [routerLinkActiveOptions]="{ exact: true }"
+            >Home</a
+          >
+        </li>
+        <li class="nav-item" *ngIf="authService.isloggedin()">
+          <a
+            class="nav-link"
+            routerLink="/workshops"
+            routerLinkActive="active"
+            [routerLinkActiveOptions]="{ exact: true }"
+            >List of Workshops</a
+          >
+        </li>
+        <li class="nav-item" *ngIf="authService.isloggedin()">
+          <a
+            class="nav-link"
+            routerLink="/workshops/add"
+            routerLinkActive="active"
+            [routerLinkActiveOptions]="{ exact: true }"
+            >Add a Workshop</a
+          >
+        </li>
+      </ul>
+      <ul class="navbar-nav mb-2 mb-lg-0">
+        <li class="nav-item" ngbDropdown *ngIf="authService.isloggedin()">
+          <a
+            class="nav-link"
+            tabindex="0"
+            ngbDropdownToggle
+            id="navbarDropdown1"
+            role="button"
+          >
+            Account & Preferences
+          </a>
+          <div
+            ngbDropdownMenu
+            aria-labelledby="navbarDropdown1"
+            class="dropdown-menu"
+          >
+            <a ngbDropdownItem routerLink="/workshops/favorites">Favourites</a>
+            <a ngbDropdownItem (click)="loggedout()">Log out</a>
+          </div>
+        </li>
+        <li class="nav-item" *ngIf="!authService.isloggedin()">
+          <a
+            class="nav-link"
+            tabindex="0"
+            id="navbarDropdown1"
+            role="button"
+            [routerLink]="['/', 'login']"
+          >
+            Log In
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>

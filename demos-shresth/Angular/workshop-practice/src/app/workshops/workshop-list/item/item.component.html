@@ -1,0 +1,34 @@
+<div *ngIf="workshop !== null" class="card p-3 w-100">
+  <div class="card-action-buttons">
+    <button
+      class="me-2 btn btn-info btn-sm"
+      title="Edit this workshop"
+      [routerLink]="['/workshops', 'edits', workshop.id]"
+    >
+      <fa-icon [icon]="icons.faPencil"></fa-icon>
+    </button>
+    <button
+      class="btn btn-danger btn-sm"
+      title="Delete this workshop"
+      (click)="onDeleteWorkshop()"
+    >
+      <fa-icon [icon]="icons.faTrash"></fa-icon>
+    </button>
+  </div>
+  <div class="card-img-top-wrapper">
+    <img [src]="workshop.imageUrl" class="card-img-top" [alt]="workshop.name" />
+  </div>
+  <div class="card-body">
+    <h5 class="card-title">{{ workshop.name }}</h5>
+    <div class="card-text">
+      <div>{{ workshop.time }}</div>
+      <div>{{ workshop.startDate | date }} - {{ workshop.endDate | date }}</div>
+      <div>{{ workshop.location | location : "short" : 40 }}</div>
+      <div class="m-3">
+        <a [routerLink]="['/workshops', workshop.id]" class="btn btn-primary"
+          >Know More</a
+        >
+      </div>
+    </div>
+  </div>
+</div>

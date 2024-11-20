@@ -1,0 +1,15 @@
+<div>
+  <fa-icon
+    [icon]="icons.faCaretUp"
+    (click)="emitVote('upvote')"
+    class="text-success size-2"
+  ></fa-icon>
+</div>
+<div>{{ upVoteCount }}</div>
+<div>
+  <fa-icon
+    [icon]="icons.faCaretDown"
+    (click)="emitVote('downvote')"
+    class="text-danger size-2"
+  ></fa-icon>
+</div>
